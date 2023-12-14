@@ -1,6 +1,6 @@
 -- lua/plugins.lua
---
--- 
+
+
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
@@ -156,6 +156,9 @@ return require('packer').startup(function(use)
         'akinsho/bufferline.nvim',
         tag = "v3.*",
         requires = 'nvim-tree/nvim-web-devicons',
+        config = function ()
+            require("configs.bufferline")
+        end
     }
 
     -- Startup menu
