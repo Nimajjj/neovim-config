@@ -26,6 +26,10 @@ map("n", "<C-down>", ":horizontal resize +1<CR>", {silent = true})
 map("n", "<C-left>", ":vertical resize -1<CR>", {silent = true})
 map("n", "<C-right>", ":vertical resize +1<CR>", {silent = true})
 
+-- Use Shift-[jk] to change active buffer
+map("n", "<S-j>", ":bp<CR>", {silent = true})
+map("n", "<S-k>", ":bn<CR>", {silent = true})
+
 -- Disable arrow for navigation in normal mode
 map("n", "<up>", "<Nop>", {silent = true})
 map("n", "<down>", "<Nop>", {silent = true})
