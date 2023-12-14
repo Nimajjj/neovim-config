@@ -1,6 +1,6 @@
 require("bufferline").setup ({
     options = {
-        mode = "buffers",
+        mode = "buffer",
         indicator = {
             style = 'underline',
         },
@@ -12,7 +12,7 @@ require("bufferline").setup ({
                 text_align = "center",
                 separator = true,
             }
-        },
+        }
     },
 })
 

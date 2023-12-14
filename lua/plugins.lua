@@ -12,11 +12,18 @@ return require('packer').startup(function(use)
         end,
     }
 
+    use ({
+        "tiagovla/scope.nvim",
+        config = function()
+            require("scope").setup({})
+        end
+    })
+
     use { "chrisgrieser/nvim-spider" }
 
-    -- to config
+    -- Noice - experimentale redisign
     use ({
-        "folke/noice.nvim", -- experimentale
+        "folke/noice.nvim",
         config = function()
             require("configs.noice")
         end,
