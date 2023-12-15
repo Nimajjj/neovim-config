@@ -30,6 +30,10 @@ map("n", "<C-right>", ":vertical resize +1<CR>", {silent = true})
 map("n", "<S-j>", ":bp<CR>", {silent = true})
 map("n", "<S-k>", ":bn<CR>", {silent = true})
 
+-- Use Shift-[hl] to change active tab
+map("n", "<S-h>", ":tabprevious<CR>", {silent = true})
+map("n", "<S-l>", ":tabnext<CR>", {silent = true})
+
 -- Disable arrow for navigation in normal mode
 map("n", "<up>", "<Nop>", {silent = true})
 map("n", "<down>", "<Nop>", {silent = true})
